@@ -23,6 +23,11 @@ public:
     void jumping() {
         cout << FIO << ", " << age << " лет, " << "из группы " << group << " прыгает" << endl;
     }
+
+    // метод (wernikeyd)
+    void pullUP() {
+        cout << FIO << ", " << age << " лет, " << "из группы " << group << " подтягивается" <<endl;
+    }
 };
 
 int main() {
@@ -36,9 +41,9 @@ int main() {
     student1.runs();
     student1.jumping();
 
-    // Создние объекта 2
+    // Создние объекта 2 (wernikeyd)
     Student student2 ("Слюзов Данила", 20,"21318");
-    // Вызов методов для объекта 2
+    // Вызов методов для объекта 2 (wernikeyd)
     student2.runs();
     student2.jumping();
 
