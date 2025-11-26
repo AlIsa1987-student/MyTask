@@ -36,5 +36,11 @@ int main() {
     student1.runs();
     student1.jumping();
 
+    // Создние объекта 2
+    Student student2 ("Слюзов Данила", 20,"21318");
+    // Вызов методов для объекта 2
+    student2.runs();
+    student2.jumping();
+
     return 0;
 }
