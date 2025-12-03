@@ -55,9 +55,9 @@ int main() {
     Student student3("Чусов Сергей " 20, "21318");
     student3.runs();
     student3.crouches();
-    student3.jumping()
+    student3.jumping();
 
 
     return 0;
-
+}
 
