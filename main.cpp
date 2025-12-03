@@ -52,7 +52,7 @@ int main() {
     student2.jumping();
 
     // Создание объекта 3 (Chusovv)
-    Student student3("Чусов Сергей " 20, "21318");
+    Student student3("Чусов Сергей ", 20, "21318");
     student3.runs();
     student3.crouches();
     student3.jumping();
