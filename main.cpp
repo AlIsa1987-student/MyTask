@@ -28,6 +28,10 @@ public:
     void pullUP() {
         cout << FIO << ", " << age << " ëåò, " << "èç ãðóïïû " << group << " ïîäòÿãèâàåòñÿ" <<endl;
     }
+    //ÐœÐµÑ‚Ð¾Ð´ (Efremov)
+    void pushUP() {
+    cout << FIO << " ," << age << " Ð»ÐµÑ‚ " << "Ð¸Ð· Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ " << group << " Ð¾Ñ‚Ð¶Ð¸Ð¼Ð°ÐµÑ‚ÑÑ" << endl;
+    }
 };
 
 int main() {
@@ -46,6 +50,14 @@ int main() {
     // Âûçîâ ìåòîäîâ äëÿ îáúåêòà 2 (wernikeyd)
     student2.runs();
     student2.jumping();
+
+    //Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° 4 (Efremov)
+    Student student4 ("Ð•Ñ„Ñ€ÐµÐ¼Ð¾Ð² ÐÐ¸ÐºÐ¸Ñ‚Ð°" , 20 , "21318");
+
+    // Ð’Ñ‹Ð·Ð¾Ð² Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð² Ð´Ð»Ñ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° 4
+    student4.pullUP();
+    student4.pushUP();
+    student4.runs();
 
     return 0;
 }
