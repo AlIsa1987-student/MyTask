@@ -9,7 +9,7 @@ public:
     int age;
     string group;
 
-    // ����������� � �����������
+    // Êîíñòðóêòîð ñ ïàðàìåòðàìè
     Student(string f, int a, string g) {
         FIO = f;
         age = a;
@@ -17,47 +17,58 @@ public:
     }
 
     void runs() {
-        cout << FIO << ", " << age << " ���, " << "�� ������ " << group << " ������" << endl;
+        cout << FIO << ", " << age << " ëåò, " << "èç ãðóïïû " << group << " áåãàåò" << endl;
     }
 
     void jumping() {
-        cout << FIO << ", " << age << " ���, " << "�� ������ " << group << " �������" << endl;
+        cout << FIO << ", " << age << " ëåò, " << "èç ãðóïïû " << group << " ïðûãàåò" << endl;
     }
 
-    // ����� (wernikeyd)
+    // ìåòîä (wernikeyd)
     void pullUP() {
-        cout << FIO << ", " << age << " ���, " << "�� ������ " << group << " �������������" <<endl;
+        cout << FIO << ", " << age << " ëåò, " << "èç ãðóïïû " << group << " ïîäòÿãèâàåòñÿ" <<endl;
     }
-    //Метод (Efremov)
+    //ÐœÐµÑ‚Ð¾Ð´ (Efremov)
     void pushUP() {
-    cout << FIO << " ," << age << " лет " << "из группы " << group << " отжимается" << endl;
+    cout << FIO << " ," << age << " Ð»ÐµÑ‚ " << "Ð¸Ð· Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ " << group << " Ð¾Ñ‚Ð¶Ð¸Ð¼Ð°ÐµÑ‚ÑÑ" << endl;
     }
+   // Ð¼ÐµÑ‚Ð¾Ð´ (Chusovv)
+    void crouches() {
+        cout << FIO << ", " << age << " Ð»ÐµÑ‚, " << "Ð¸Ð· Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ " << group << " Ð¿Ñ€Ð¸ÑÐµÐ´Ð°ÐµÑ‚" << endl;
+ }
 };
 
 int main() {
 
     system("chcp 1251<nul");
 
-    // �������� �������
-    Student student1("������� �����", 19, "21318");
+    // Ñîçäàíèå îáúåêòà
+    Student student1("Åãîðîâà Àëèñà", 19, "21318");
 
-    // ����� �������
+    // Âûçîâ ìåòîäîâ
     student1.runs();
     student1.jumping();
 
-    // ������� ������� 2 (wernikeyd)
-    Student student2 ("������ ������", 20,"21318");
-    // ����� ������� ��� ������� 2 (wernikeyd)
+    // Ñîçäíèå îáúåêòà 2 (wernikeyd)
+    Student student2 ("Ñëþçîâ Äàíèëà", 20,"21318");
+    // Âûçîâ ìåòîäîâ äëÿ îáúåêòà 2 (wernikeyd)
     student2.runs();
     student2.jumping();
 
-    //Создание объекта 4 (Efremov)
-    Student student4 ("Ефремов Никита" , 20 , "21318");
+    //Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° 4 (Efremov)
+    Student student4 ("Ð•Ñ„Ñ€ÐµÐ¼Ð¾Ð² ÐÐ¸ÐºÐ¸Ñ‚Ð°" , 20 , "21318");
 
-    // Вызов методов для объекта 4
+    // Ð’Ñ‹Ð·Ð¾Ð² Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð² Ð´Ð»Ñ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° 4
     student4.pullUP();
     student4.pushUP();
     student4.runs();
+    // Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° 3 (Chusovv)
+    Student student3("Ð§ÑƒÑÐ¾Ð² Ð¡ÐµÑ€Ð³ÐµÐ¹ ", 20, "21318");
+    student3.runs();
+    student3.crouches();
+    student3.jumping();
+
 
     return 0;
 }
+
