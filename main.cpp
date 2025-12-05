@@ -34,7 +34,11 @@ public:
     }
    // Ð¼ÐµÑ‚Ð¾Ð´ (Chusovv)
     void crouches() {
-        cout << FIO << ", " << age << " Ð»ÐµÑ‚, " << "Ð¸Ð· Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ " << group << " Ð¿Ñ€Ð¸ÑÐµÐ´Ð°ÐµÑ‚" << endl;
+        cout << FIO << ", " << age << " Ð»ÐµÑ‚, " << "Ð¸Ð· Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ " << group << " Ð¿Ñ€Ð¸ÑÐµÐ´Ð°ÐµÑ‚" << endl;  
+   // метод (Zverev)
+   void swims() {
+        cout << FIO << ", " << age << " лет, " << "из группы " << group << " плавает" << endl;
+    }
  }
 };
 
@@ -67,6 +71,11 @@ int main() {
     student3.runs();
     student3.crouches();
     student3.jumping();
+    // Создание объекта 5 (Zverev)
+    Student student5("Зверев Никита", 20, "21318");
+    student5.runs();
+    student5.swims();
+    student5.jumping();
 
 
     return 0;
