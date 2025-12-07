@@ -46,6 +46,10 @@ public:
   // метод (Ohtioma51)
    void flexibility() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " гибкость" << endl;
+  
+   // метод (SevaSob)
+   void sambo() {
+       cout << FIO << ", " << age << " лет, " << "из группы " << group << " самбуется" << endl;
    }
  }
 };
@@ -94,6 +98,10 @@ int main() {
     Student student7("Хамицевич Артем", 20, "21318");
     student7.runs();
     stident7.flexibility();
+    // OBJ 7 - SevaSob
+    Student student6("Всеволод Соболев", 25, "21318");
+    student6.sambo();
+    student6.dances();
 
     return 0;
 }
