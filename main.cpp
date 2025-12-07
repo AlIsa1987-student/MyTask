@@ -39,6 +39,10 @@ public:
    void swims() {
         cout << FIO << ", " << age << " лет, " << "из группы " << group << " плавает" << endl;
     }
+   // метод (Vorsin)
+   void dances() {
+       cout << FIO << ", " << age << " лет, " << "из группы " << group << " танцует" << endl;
+   }
  }
 };
 
@@ -77,7 +81,12 @@ int main() {
     student5.swims();
     student5.jumping();
 
+    // OBJ 6 - VORSIN
+    Student student6("Иванов Иван", 20, "21318");
+    student6.jumping();
+    student6.dances();
 
     return 0;
 }
+
 
