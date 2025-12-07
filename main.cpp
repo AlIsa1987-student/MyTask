@@ -43,6 +43,11 @@ public:
    void dances() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " танцует" << endl;
    }
+  
+   // метод (SevaSob)
+   void sambo() {
+       cout << FIO << ", " << age << " лет, " << "из группы " << group << " самбуется" << endl;
+   }
  }
 };
 
@@ -84,6 +89,11 @@ int main() {
     // OBJ 6 - VORSIN
     Student student6("Иванов Иван", 20, "21318");
     student6.jumping();
+    student6.dances();
+
+    // OBJ 7 - SevaSob
+    Student student6("Всеволод Соболев", 25, "21318");
+    student6.sambo();
     student6.dances();
 
     return 0;
