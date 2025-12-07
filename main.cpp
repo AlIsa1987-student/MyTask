@@ -43,6 +43,10 @@ public:
    void dances() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " танцует" << endl;
    }
+  // метод (Ohtioma51)
+   void flexibility() {
+       cout << FIO << ", " << age << " лет, " << "из группы " << group << " гибкость" << endl;
+   }
  }
 };
 
@@ -85,6 +89,11 @@ int main() {
     Student student6("Иванов Иван", 20, "21318");
     student6.jumping();
     student6.dances();
+
+    // Создание объекта 7 (Ohtioma51)
+    Student student7("Хамицевич Артем", 20, "21318");
+    student7.runs();
+    stident7.flexibility();
 
     return 0;
 }
