@@ -42,6 +42,10 @@ public:
    // метод (Vorsin)
    void dances() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " танцует" << endl;
+       
+    // метод (Yashkin)
+   void sings() {
+       cout << FIO << ", " << age << " лет, " << "из группы " << group << " поёт" << endl;
    }
  }
 };
@@ -81,10 +85,11 @@ int main() {
     student5.swims();
     student5.jumping();
 
-    // OBJ 6 - VORSIN
-    Student student6("Иванов Иван", 20, "21318");
-    student6.jumping();
-    student6.dances();
+    
+    // Создание объекта 7 - Yashkin
+    Student student7("Яшкин Роман", 20, "21318");
+    student7.dances();
+    student7.sings();
 
     return 0;
 }
