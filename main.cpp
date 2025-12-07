@@ -34,7 +34,7 @@ public:
     }
    // Ð¼ÐµÑ‚Ð¾Ð´ (Chusovv)
     void crouches() {
-        cout << FIO << ", " << age << " Ð»ÐµÑ‚, " << "Ð¸Ð· Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ " << group << " Ð¿Ñ€Ð¸ÑÐµÐ´Ð°ÐµÑ‚" << endl;  
+        cout << FIO << ", " << age << " Ð»ÐµÑ‚, " << "Ð¸Ð· Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ " << group << " Ð¿Ñ€Ð¸ÑÐµÐ´Ð°ÐµÑ‚" << endl;
    // метод (Zverev)
    void swims() {
         cout << FIO << ", " << age << " лет, " << "из группы " << group << " плавает" << endl;
@@ -42,7 +42,7 @@ public:
    // метод (Vorsin)
    void dances() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " танцует" << endl;
-       
+   }
     // метод (Yashkin)
    void sings() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " поёт" << endl;
@@ -50,10 +50,16 @@ public:
   // метод (Ohtioma51)
    void flexibility() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " гибкость" << endl;
-  
+   }
    // метод (SevaSob)
    void sambo() {
        cout << FIO << ", " << age << " лет, " << "из группы " << group << " самбуется" << endl;
+   }
+
+   // метод (YoGoSee)
+   void throwstheball() {
+       cout << FIO << ", " << age << " лет, " << "из группы " << group << " Кидает мяч" << endl;
+
    }
  }
 };
@@ -93,7 +99,7 @@ int main() {
     student5.swims();
     student5.jumping();
 
-    
+
     // Создание объекта 7 - Yashkin
     Student student7("Яшкин Роман", 20, "21318");
     student7.dances();
@@ -107,6 +113,10 @@ int main() {
     Student student6("Всеволод Соболев", 25, "21318");
     student6.sambo();
     student6.dances();
+    // Создание объекта 8 (YoGoSe)
+    Student student8("Корытов Кирилл", 20, "21318");
+    student8.runs();
+    stident8.throwstheball();
 
     return 0;
 }
