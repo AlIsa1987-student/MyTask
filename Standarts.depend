@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1764950710 source:c:\gitrepo\mytask\main.cpp
+	<iostream>
+	<string>
+
